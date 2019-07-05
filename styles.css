@@ -873,14 +873,14 @@ body {
     bottom: 4%;
     right: 10px;
     outline: none;
-
+    border:none;
     color: white;
-    padding: 20px 20px;
-    font-size:30px;
+    padding: 16px;
+    font-size:35px;
     cursor: pointer;
 }
 #bot-btn:hover {
-    opacity: 1.5;
+    background-color: #0093a0;
 }
  
 #bootchat_iframe {
@@ -889,8 +889,7 @@ body {
     right: 8px;
     z-index:20;
     background-color: white;
-    outline:none;
-    border-radius: 3px solid white;
-
+    border:none;
+    visibility: hidden;
 }  
 

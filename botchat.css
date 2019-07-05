@@ -25,12 +25,11 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     visibility: hidden; }
   
   .wc-header {
-    /* background-color: red;
-    box-shadow: 0 1px rgba(0, 0, 0, 0.2);*/
+    
     box-sizing: content-box; 
     color:black;
     font-weight: 500;
-    height: 30px;
+    height: 40px;
     left: 0;
     letter-spacing: 0.5px;
     padding: 8px 8px 0 8px;
@@ -38,16 +37,17 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     right: 0;
     top: 0;
     z-index: 1;
-    background-color: #fff;
+    background-color:white;
     overflow: hidden;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 20px 5px rgb(158, 244, 255); }
+    box-shadow: 0px 0px 20px 5px rgb(158, 244, 255);
+   }
   
   .wc-time {
-    color: #999999;
+    color:#000000;
     margin-bottom: 10px; }
   
   .wc-message-groups {
@@ -62,12 +62,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     right: 0;
     top: 38px;
     transition: transform 0.2s cubic-bezier(0, 0, 0.5, 1);
-    /* display: flex;
-  flex-flow: column;
-  width: 100%;
-  justify-content: flex-end;
-  padding: 15px;
-  box-sizing: border-box; */
+ 
  }
     .wc-message-groups.no-header {
       top: 0; }
@@ -76,7 +71,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     overflow: hidden; }
   
   .wc-suggested-actions {
-    /* background-color: #f9f9f9; */
+  
     bottom: 50px;
     height: 0;
     left: 0;
@@ -189,7 +184,6 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   
   .wc-message-content {
     border-radius: 2px;
-    /* box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2); */
     padding: 8px;
     word-break: break-word; }
   
@@ -303,15 +297,14 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     max-width: 91%; }
   
   .wc-card {
-    /* border: 1px solid #d2dde5; */
-    border:none;
+   border: 1px solid #d2dde5;
     width: 302px; }
   
   .wc-adaptive-card {
     width: 318px; }
   
   .wc-wide .wc-card {
-    /* border: 1px solid #d2dde5; */
+    border: 1px solid #d2dde5; 
     width: 398px; }
   
   .wc-wide .wc-adaptive-card {
@@ -397,8 +390,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     text-align: right; }
   
   .wc-message-from-me .wc-message-content {
-    /* background-color: #0078d7;
-    color: #ffffff;  */
+   
     align-self: flex-end;
     background: linear-gradient(to right, #ee0979, #ff6a00);
     border-radius: 30px 30px 0 30px;
@@ -419,8 +411,6 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     margin-left: 8px; }
   
   .wc-message-from-bot .wc-message-content {
-    /* background-color:white;
-    color: #000000;*/
     align-self: flex-start; 
     background: #fff;
     border-radius: 30px 30px 30px 0;
@@ -437,10 +427,10 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   
   /* console */
   .wc-console {
-   border: 5px solid #dbdee1;   
+   border:5px solid #eee;   
     bottom: 0;
     box-sizing: border-box;
-    height: 50px;
+    height: 60px;
     left: 0;
     position: absolute;
     right: 0; }
@@ -457,19 +447,23 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
       height: 40px; }
     .wc-console svg {
       fill:#ee0979;
-      margin: 11px; }
+      margin-top: 14px;
+      margin-right: 11px;
+      margin-left: 8px;
+      margin-bottom: 11px;
+     }
     .wc-console input[type=text],
     .wc-console textarea {
-      /* border: none; */
+    
       height: 100%;
       outline: none;
-      /* padding: 0; */
-      /* resize: none; */
+      resize: none; 
+  
       width: 100%;
-      border-radius: 20px;
+      border-radius: 20px; 
       border: 2px solid #eee;
       height: 40px;
-      /* width: 210px; */
+      margin-top: 4px;
       padding-left: 15px;
       
      }
@@ -484,6 +478,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
         left: 0;
         opacity: 0;
         outline: 0;
+        margin-top:4px;
         position: absolute;
         top: 0;
         width: 0; }

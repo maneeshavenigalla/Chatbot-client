@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./botchat_style.css"/>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 
@@ -246,25 +245,26 @@
 
               <button class="btn-inline">Show all <span>&rarr;</span></button>
               <button id="bot-btn">
-                <i onclick()="myFunction(this)" class="fas fa-comments"></i> </button>
+                <i onclick="myFunction(this)" class="fas fa-comments"></i> </button>
        
     <script>
-        var toggle = true;
+        var toggle = false;
         
         document.getElementById('bot-btn').addEventListener('click', () => {
             if(!toggle){
-                document.getElementById('bootchat_iframe').style.display = "block"; 
+                document.getElementById('bootchat_iframe').style.visibility = "visible"; 
                 
             }
            else {
-                document.getElementById('bootchat_iframe').style.display = "none";  
+                document.getElementById('bootchat_iframe').style.visibility = "hidden";  
             } 
             toggle = !toggle;
              
           });
-          // function myFunction(x) {
-          //             x.classList.toggle("fa-times-circle");
-          //           } 
+          // <i class=" fa-times"></i>
+          function myFunction(x) {
+                   x.classList.toggle("fa-times");
+                   } 
           </script>
             <!-- <iframe 
            src="https://webchat.botframework.com/embed/Tech-Bot-final?s=VB25rtFzI8g.PLAxKSAlhB_ZdLP5o6gyT9TXk2nfVXoJkH0wglogZEQ"
