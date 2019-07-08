@@ -14,8 +14,10 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
 
     <title>Hotel Constance &mdash; Your all-in-one booking app</title>
   </head>
@@ -243,34 +245,45 @@
                 </figcaption>
               </figure>
 
-              <button class="btn-inline" onclick="myFunction(this)">Show all <span>&rarr;</span></button>
+              <button class="btn-inline" onclick="myFunction(this)">
+                Show all <span>&rarr;</span>
+              </button>
               <button id="bot-btn">
-                <i onclick="myFunction(this)" class="fas fa-comments"></i> </button>
-       
-    <script>
-        var toggle = false;
-        
-        document.getElementById('bot-btn').addEventListener('click', () => {
-            if(!toggle){
-                document.getElementById('bootchat_iframe').style.visibility = "visible"; 
+                <i onclick="myFunction(this)" class="fas fa-comments"></i>
+              </button>
 
-            }
-           else {
-                document.getElementById('bootchat_iframe').style.visibility = "hidden";  
-            } 
-            toggle = !toggle;
-             
-          });
-          function myFunction(x) {
-                   x.classList.toggle("fa-times");
-                   } 
-           </script>
-            <!-- <iframe 
+              <script>
+                var toggle = false;
+
+                document
+                  .getElementById("bot-btn")
+                  .addEventListener("click", () => {
+                    if (!toggle) {
+                      document.getElementById(
+                        "bootchat_iframe"
+                      ).style.visibility = "visible";
+                    } else {
+                      document.getElementById(
+                        "bootchat_iframe"
+                      ).style.visibility = "hidden";
+                    }
+                    toggle = !toggle;
+                  });
+                function myFunction(x) {
+                  x.classList.toggle("fa-times");
+                }
+              </script>
+              <!-- <iframe 
            src="https://webchat.botframework.com/embed/Tech-Bot-final?s=VB25rtFzI8g.PLAxKSAlhB_ZdLP5o6gyT9TXk2nfVXoJkH0wglogZEQ"
            style="min-width: 400px; min-height: 500px;"></iframe>
     -->
-    <iframe name= "" id="bootchat_iframe" src='botchat.html' width="400px;" height="450px"></iframe>
-            
+              <iframe
+                name=""
+                id="bootchat_iframe"
+                src="botchat.html"
+                width="450px;"
+                height="650px"
+              ></iframe>
             </div>
           </div>
         </main>
