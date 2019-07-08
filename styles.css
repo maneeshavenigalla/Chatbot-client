@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #0093a0;
+    --color-primary: #03818d;
     --color-primary-light: #03818d;
     --color-primary-dark: #13545abe;
     --color-grey-light-1: #faf9f9;
@@ -875,8 +875,8 @@ body {
     outline: none;
     border:none;
     color: white;
-    padding: 16px;
-    font-size:35px;
+    padding: 8px;
+    font-size:36px;
     cursor: pointer;
 }
 #bot-btn:hover {

@@ -505,14 +505,14 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
       right: 0; }
       .wc-console .wc-mic.hidden,
       .wc-console .wc-send.hidden {
-        visibility: hidden; }
+        visibility: visible; }
     .wc-console .wc-send svg {
       height: 18px;
       width: 27px; }
     .wc-console .wc-mic.active path#micFilling {
       fill: #4e3787; }
     .wc-console .wc-mic.inactive path#micFilling {
-      visibility: hidden; }
+      visibility: visible; }
   
   .wc-console.has-text .wc-send svg {
     fill: #0078d7; }

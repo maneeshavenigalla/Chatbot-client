@@ -243,7 +243,7 @@
                 </figcaption>
               </figure>
 
-              <button class="btn-inline">Show all <span>&rarr;</span></button>
+              <button class="btn-inline" onclick="myFunction(this)">Show all <span>&rarr;</span></button>
               <button id="bot-btn">
                 <i onclick="myFunction(this)" class="fas fa-comments"></i> </button>
        
@@ -253,7 +253,7 @@
         document.getElementById('bot-btn').addEventListener('click', () => {
             if(!toggle){
                 document.getElementById('bootchat_iframe').style.visibility = "visible"; 
-                
+
             }
            else {
                 document.getElementById('bootchat_iframe').style.visibility = "hidden";  
@@ -261,16 +261,15 @@
             toggle = !toggle;
              
           });
-          // <i class=" fa-times"></i>
           function myFunction(x) {
                    x.classList.toggle("fa-times");
                    } 
-          </script>
+           </script>
             <!-- <iframe 
            src="https://webchat.botframework.com/embed/Tech-Bot-final?s=VB25rtFzI8g.PLAxKSAlhB_ZdLP5o6gyT9TXk2nfVXoJkH0wglogZEQ"
            style="min-width: 400px; min-height: 500px;"></iframe>
     -->
-    <iframe name= "" id="bootchat_iframe" src='botchat.html' width="300px;" height="450px"></iframe>
+    <iframe name= "" id="bootchat_iframe" src='botchat.html' width="400px;" height="450px"></iframe>
             
             </div>
           </div>
